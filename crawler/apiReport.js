@@ -90,5 +90,5 @@ fs.readJson('./crawler/fileData/api.json', (err, packageObj) => {
   const missInfoTable = jsonToTableHtmlString(missInfo, {
     tableStyle: 'width: 100%'
   })
-  fs.writeFileSync('./dist/report.html', `${title}${table}${missTitle}${missInfoTable}`)
+  fs.writeFileSync('./dist/index.html', `${title}${table}${missTitle}${missInfoTable}`)
 })
