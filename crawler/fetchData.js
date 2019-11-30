@@ -1,6 +1,6 @@
 module.exports = async function fetchData(jsonArr) {
   function getData(json) {
-    return fetch("http://apimgr.zz.com/api/interface/get?id=3015",{
+    return fetch("http://apimgr.zzzz.com/api/interface/get?id=3015",{
       method:"GET",
       headers:{
           "Content-type":"application/json; charset=UTF-8",
