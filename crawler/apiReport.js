@@ -76,7 +76,7 @@ fs.readJson('./crawler/fileData/api.json', (err, packageObj) => {
     h3,h4{text-align: center}
     h4{line-height: 28px; padding:0; margin:0}
     </style>
-    <h3 class="title">接口完整性自动化报告</h3>
+    <h3 class="title">接口完整性自动化报告 ${new Date().toLocaleString()}</h3>
     <h4>总接口数：${reportJson.total}</h4>
     <h4>没有文档接口数：${reportJson['没有文档'].length}</h4>
     <h4>API文档有字段但没有解释：${reportJson['字段缺失'].length}</h4>

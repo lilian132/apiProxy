@@ -38,7 +38,10 @@ let page;
 //     })
 // })();
 
- 
+const getApiDoc = (url) => {
+  return data[url]
+}
+
 const init = () => {
   fs.readJson('./crawler/fileData/api.json', (err, packageObj) => {
     if (err) console.error(err)    
@@ -46,11 +49,6 @@ const init = () => {
     console.log(data)
   })
 }
-
-const getApiDoc = (url) => {
-  return data[url]
-}
-
 init()
 
 module.exports = {
