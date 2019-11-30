@@ -1,0 +1,21 @@
+{
+  "name": "apiproxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "report": "node ./crawler/apiReport.js",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "lilingyun <245943272@qq.com>",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "http-proxy": "^1.18.0",
+    "json-table-converter": "^0.3.0",
+    "node-http-proxy-json": "^0.1.9",
+    "puppeteer": "^2.0.0"
+  }
+}

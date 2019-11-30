@@ -1,0 +1,5 @@
+{
+  "/index/news": "noticeContent,marketActivities",
+  "/index/creditstatus": "refuseCode,list",
+  "/index/mainhome": "isHuidus"
+}
