@@ -11,4 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@master      
+    - name: Build and Deploy
+    - uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.actiondemo }}
+        BRANCH: gh-pages
+        FOLDER: dist
+        BUILD_SCRIPT: npm install && npm run report
