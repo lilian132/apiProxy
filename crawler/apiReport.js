@@ -1,7 +1,7 @@
 const fs = require('fs-extra');
 const { jsonToTableHtmlString } = require('json-table-converter')
 
-//  记录每个属性是否有文档
+//  记录每个属性是否有文档.
 function mapAttributes(properties, missObj){
   for(let i in properties) {
     if (i == 'type' || i == 'description' || i == 'properties' || i == 'required') {
