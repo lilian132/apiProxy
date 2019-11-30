@@ -1,6 +1,9 @@
-name: GithubPages
+name: githubPages
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -16,5 +19,5 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.actiondemo }}
         BRANCH: gh-pages
-        FOLDER: build
+        FOLDER: dist
         BUILD_SCRIPT: npm install && npm run report
