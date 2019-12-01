@@ -22,5 +22,5 @@ jobs:
         name: 'deployMyServer'
         token: ${{ secrets.actiondemo1 }}
         requestUrl: 'http://106.54.189.81:4008/page/deploy'
-        dist: '../'
+        dist: 'dist'
         target: 'dist'
