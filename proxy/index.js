@@ -28,5 +28,5 @@ var server =http.createServer(function(req, res) {
   proxy.web(req, res, { target: 'https://ehkrd.danarupiah.id', changeOrigin: true, });  
 });  
 
-console.log("listening on port 4009")  
+console.log("代理服务器生效")  
 server.listen(4009);
