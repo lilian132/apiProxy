@@ -1,0 +1,26 @@
+name: Deploy static source to my server
+
+on: 
+  push:
+    branches:
+      -master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+      
+    - name: build
+      run: npm install && npm run report
+
+    - name: deploy
+      uses: closertb/deploy-static-action@master 
+      with:
+        name: 'deployMyServer'
+        token: ${{ secrets.actiondemo1 }}
+        requestUrl: 'http://106.54.189.81:4008/page/deploy'
+        dist: '../'
+        target: 'dist'
