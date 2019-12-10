@@ -91,12 +91,12 @@ const createNewBody = (body, api, apiUrl) => {
  * @param {string} apiUrl 
  */
 function updateMissFile(missArr, apiUrl) {
-  fs.readJson('./crawler/fileData/missInfo.json', (err, packageObj) => { 
+  fs.readJson('../missInfo.json', (err, packageObj) => { 
     if (!packageObj) {
       packageObj = {}
     }
     packageObj[apiUrl] = missArr.join()
-    fs.writeJson('./crawler/fileData/missInfo.json', packageObj, err => {      
+    fs.writeJson('../missInfo.json', packageObj, err => {      
       console.log('updateMissFile success!')
     })
   })

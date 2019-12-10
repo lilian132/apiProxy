@@ -46,7 +46,7 @@ const init = () => {
   fs.readJson('./crawler/fileData/api.json', (err, packageObj) => {
     if (err) console.error(err)    
     data = dataStrategy.processData(packageObj)
-    console.log(data)
+    // console.log(data)
   })
 }
 init()

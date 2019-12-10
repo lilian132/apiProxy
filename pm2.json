@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "apiProxy", // 应用程序名称
+      "script": "index.js", // 应用程序的脚本路径
+      // "exec_mode": "cluster", // 应用程序启动模式，这里设置的是cluster_mode（集群），默认是fork
+      // "instances": 2, // 启用多少个实例,用于负载均衡
+      "watch": "./", // 监听应用目录的变化，一旦发生变化，自动重启
+      "ignore_watch": "fileData",
+      "log_date_format": "YYYY-MM-DD HH:mm Z"
+    }
+  ]
+}

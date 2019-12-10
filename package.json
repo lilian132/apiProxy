@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "report": "node ./crawler/apiReport.js",
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "prod": "pm2 start pm2.json",
+    "daemon": "pm2 start pm2.json --no-daemon"
   },
   "keywords": [],
   "author": "lilingyun <245943272@qq.com>",

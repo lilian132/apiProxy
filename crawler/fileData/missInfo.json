@@ -1,5 +1,1 @@
-{
-  "/index/news": "noticeContent,marketActivities",
-  "/index/creditstatus": "refuseCode,list",
-  "/index/mainhome": "isHuidus"
-}
+{"/index/news":"noticeContent,marketActivities","/index/creditstatus":"refuseCode,list","/index/mainhome":"isHuidus"}
